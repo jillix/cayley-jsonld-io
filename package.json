@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/danandrei/cayley-jsonld-driver/issues"
   },
-  "homepage": "https://github.com/danandrei/cayley-jsonld-driver#readme"
+  "homepage": "https://github.com/danandrei/cayley-jsonld-driver#readme",
+  "dependencies": {
+    "cayley": "github:danandrei/cayley.js",
+    "jsonld": "^0.4.11",
+    "uuid": "~2.0.1",
+    "async": "~0.9.0",
+    "n3": "~0.4.5"
+  }
 }
