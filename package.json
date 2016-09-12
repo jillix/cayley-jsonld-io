@@ -1,5 +1,5 @@
 {
-  "name": "cayley-jsonld-driver",
+  "name": "cayley-jsonld-io",
   "version": "0.1.0",
   "description": "JSON-LD based cayley driver",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danandrei/cayley-jsonld-driver.git"
+    "url": "git+https://github.com/danandrei/cayley-jsonld-io.git"
   },
   "keywords": [
     "cayley",
@@ -17,9 +17,9 @@
   "author": "danandrei",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danandrei/cayley-jsonld-driver/issues"
+    "url": "https://github.com/danandrei/cayley-jsonld-io/issues"
   },
-  "homepage": "https://github.com/danandrei/cayley-jsonld-driver#readme",
+  "homepage": "https://github.com/danandrei/cayley-jsonld-io#readme",
   "dependencies": {
     "cayley": "github:danandrei/cayley.js",
     "jsonld": "^0.4.11",
