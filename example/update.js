@@ -1,24 +1,19 @@
-var CayleyClient = require('../index').CayleyClient
-  , cayley = new CayleyClient();
+var cayleyJsonldIO = require('../index.js');
+var client = new cayleyJsonldIO.Client({
+    url: 'http://localhost:64210/'
+});
 
-cayley.connect('http://localhost:64210/', function (err, model) {
+var updateDoc = {
+    '@context': 'http://json-ld.org/contexts/person.jsonld',
+    '@id': 'http://service.jillix.com/johnLennon',
+    'name': 'Mike Lennon'
+};
+
+client.update(updateDoc, function (err, result) {
 
     if (err) {
         throw err;
     }
 
-    var updateDoc = {
-        '@context': 'http://json-ld.org/contexts/person.jsonld',
-        '@id': 'http://service.jillix.com/johnLennon',
-        'name': 'Mike Lennon'
-    };
-
-    model.update(updateDoc, function (err, result) {
-
-        if (err) {
-            throw err;
-        }
-
-        console.log(result);
-    });
+    console.log(result);
 });

@@ -1,6 +1,6 @@
 // Set up driver clases
 var driver = {
-    CayleyClient: require('./lib/cayley_client')
+    Client: require('./lib/client')
 };
 
 // export driver clases
